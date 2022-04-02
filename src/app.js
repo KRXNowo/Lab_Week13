@@ -1,3 +1,5 @@
+//duplicate original
+
 const addCardBtn = document.querySelector('.original-container')
 const cardContainer = document.querySelector('.copy-container')
 
@@ -6,8 +8,16 @@ const cardTemplate = `
     <p>one</p>
   </div>
 `
-function addACard() {
-  cardContainer.insertAdjacentHTML("afterbegin", cardTemplate)
+
+const cardTemplate1 = `
+  <div>
+    <p>two</p>
+  </div>
+`
+
+function duplicate() {
+    cardContainer.insertAdjacentHTML("afterbegin", cardTemplate1)
+    cardContainer.insertAdjacentHTML("afterbegin", cardTemplate)
 }
 
-addCardBtn.addEventListener('click', addACard)
+addCardBtn.addEventListener('click', duplicate)

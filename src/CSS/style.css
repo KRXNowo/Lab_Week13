@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+section {
+    height: 50vh;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+h1 {
+    color: blue;
+    size: 5pt;
+}
+h2 {
+    color:dimgrey;
+}
+.copy-container div {
+    background-color:aqua;
+    width: 100px;
+    width: 100px;
+  }
